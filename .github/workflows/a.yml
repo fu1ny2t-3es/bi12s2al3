@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-  build_libretro:
+  build:
     strategy:
       matrix:
         arch: [so64]
@@ -17,7 +17,7 @@ jobs:
 
     steps:
 
-    - uses: li1ht2ay-3es/bi12s2al3@build
+    - uses: fu1ny2t-3es/bi12s2al3@build
       with:
         arch: ${{ matrix.arch }}
 
